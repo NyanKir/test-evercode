@@ -4,6 +4,7 @@ import {Table} from "./components/Table";
 import {Context} from "./Context";
 import {TableType} from "./types";
 import {Button} from "./components/Button/Button";
+import {log} from "util";
 
 function App() {
     console.log()
@@ -126,6 +127,10 @@ function App() {
             })
             if(response.status===200){
                 window.open(`${process.env.REACT_APP_SERVER_HOST}/api/download`)
+            }
+            if(response.status===400){
+                alert((await response.json()).error)
+
             }
         }catch (e) {
             alert('Error: '+e)
