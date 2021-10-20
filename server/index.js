@@ -54,7 +54,7 @@ app.get('/api/download', function (req, res) {
     res.download(__dirname + '\\data.csv', 'data.csv',);
 })
 
-const port = process.env.SERVER_PORT
-app.listen(3333, function () {
-    console.log('Server listening on ' + 3333)
+const port = process.env.SERVER_PORT || 3333
+app.listen(port, function () {
+    console.log('Server listening on ' + port)
 })
