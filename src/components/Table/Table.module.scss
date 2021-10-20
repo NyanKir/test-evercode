@@ -1,0 +1,36 @@
+.table{
+  margin-top: 10px;
+  padding: 10px;
+
+}
+.tableItem{
+  display: flex;
+  flex-direction: column;
+}
+.tableHeader{
+  background: #d0d0d0;
+  margin-bottom: 5px;
+  padding:7px 5px;
+  display: flex;
+  align-items: center;
+}
+.tableAddress{
+  width: 95%;
+  margin-bottom: 5px;
+  padding: 7px 5px;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  background: #d0d0d0;
+}
+.title{
+  margin-right: auto;
+  margin-left: 5px;
+}
+.balance{
+  margin-left: auto;
+  margin-right: 10px;
+}
+.error{
+  color: #e14a4a;
+}

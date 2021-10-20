@@ -1,0 +1,40 @@
+
+.btn {
+  cursor: pointer;
+  background-color: $secondary;
+  border: 1px solid $secondary;
+  border-radius: 3px;
+  display: inline-block;
+  padding: .375rem .75rem;
+  transition: .3s all ease;
+  margin: 0 3px;
+  &:focus {
+    background-color: darken($secondary, 30);
+    box-shadow: 0 0 0 4px $secondary;
+  }
+
+  &:hover {
+    background-color: darken($secondary, 10);
+  }
+}
+
+@each $name, $color in $btn {
+  .btn {
+    &-#{$name} {
+      background-color: $color;
+      border: 1px solid $color;
+      &:focus {
+        background-color: darken($color, 30);
+        box-shadow: 0 0 0 4px $color;
+      }
+
+      &:hover {
+        background-color: darken($color, 10);
+      }
+    }
+  }
+}
+
+.input {
+  padding: 0.375rem;
+}
