@@ -1,5 +1,6 @@
 # Тестовое задание Evercode
 # Конечный результат
+![alt text](img.png)
 ## Запуск
 ###  `npm install` or `yarn install`
 ###  `node server/index.js`
